@@ -1,1 +1,26 @@
-
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация - IPTV Сервис</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Регистрация</h2>
+        <form id="reg-form">
+            <input type="email" id="email" placeholder="Ваш E-mail" required>
+            <input type="password" id="password" placeholder="Пароль" required>
+            
+            <label>
+                <input type="checkbox" id="agree" required> 
+                Я согласен с <a href="rules.html" target="_blank">правилами пользования</a>
+            </label>
+            
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+    </div>
+    <script type="module" src="js/auth.js"></script>
+</body>
+</html>
