@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Личный кабинет</h2>
+        <div id="user-info">
+            <div class="card">
+                <p><strong>E-mail:</strong> <span id="user-email">Загрузка...</span></p>
+            </div>
+            
+            <div class="card">
+                <p><strong>Плейлист (M3U):</strong></p>
+                <input type="text" id="playlist-link" readonly value="Загрузка...">
+                
+                <p><strong>Ссылка EPG:</strong></p>
+                <input type="text" id="epg-link" readonly value="Загрузка...">
+                
+                <p><strong>Действует до:</strong> <span id="expiry-date">--.--.----</span></p>
+            </div>
 
+            <div class="card">
+                <p><strong>Способ оплаты:</strong></p>
+                <select id="payment-method">
+                    <option value="bill">Счет (ежегодно)</option>
+                    <option value="cash">Наличные (ежегодно)</option>
+                </select>
+            </div>
+            <button onclick="saveSettings()">Сохранить настройки</button>
+        </div>
+    </div>
+
+    <!-- Подключаем логику -->
+    <script type="module" src="js/dashboard.js"></script>
+</body>
+</html>
